@@ -1,0 +1,57 @@
+stellaris ist zimlich cool, anno auch...
+
+wahrscheinlich irgendeine economy mechanik/system
+
+aufjedenfall 2d/pixel etwas anderes kann ich nicht
+.
+.
+.
+ich mache einfach mal ein inventar
+-bewegen
+-items aufsammeln
+-inventar/bewegungsmodus
+-items anwenden
+-quickbar
+-items kombinieren
+-hover name
+
+finale idee: text und buchstabensystem ist für das erste genug
+1.-on trigger enter text einblenden
+2.-die möglichkeit aus beliebigen string, text bestehend aus sprites zu generieren
+3.-die möglichkeit einzustellen das die buchstaben wackeln(um z.b. kälte zu visualisieren)
+4.-die möglichkeit den buchstaben einen "bounche" zu geben wenn sie auftauchen
+5.-die möglichkeit zwischen on trigger enter oder knopfdruck text erscheinen zu lassen zu wechseln
+6.-frei modifizierbare größe/einblendgeschwindigkeit/offsets/
+
+5.3-erster tag
+
+implementierung von punkt 2 und 1
+
+-anfängliches problem: nicht wissen das es eine möglichkeit gab den string aufzuteilen/ allgemeiner ansatz.
+-mir wurde von recources.load abgeraten, letztendlich verwende ich dies doch weil es fonktioniert und ich im 
+ moment keine andere lösung bereithabe, weiterhin sehe ich auch keine risiken
+
+-muss die kommas im ursprung string wegbekommen, habe die idee von utz dazu nicht ganz verstaden, 
+(string)hover[i] kann von recource.load nicht gelesen werden
+
+6.3-zweiter tag
+
+implementierung von punkt 3,6 und 4 
+
+7. neue idee fade in/out
+
+7.3 dritter Tag
+
+implementierung  von punkt 7,5
+
+8. neue idee text nach gewisser zeit auftauchen lassen
+9. neue idee color swap
+
+amaze messe
+colonegamehouse
+probleme: _ duchr leertaste ersetzen im public string
+	hover und click nahtlos zusammensetzen(zukünftig auch timer text)
+	wenn der delay 0 ist ist er nicht null d.h. immernoch versatz
+	implementierung von zeilen sprüngen
+
+idee: string splitten an "/" 
